@@ -1,2 +1,2 @@
-# Respuesta-AstroF-sica
-Proyecto persona
+# Respuesta-AstroFisica
+Proyecto personal 
