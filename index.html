@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Física y Astronomía - Guía Completa</title>
+
+<style>
+:root{
+  --bg:#0f172a;
+  --panel:#1e293b;
+  --panel2:#172033;
+  --text:#e2e8f0;
+  --muted:#94a3b8;
+  --accent:#60a5fa;
+  --good:#34d399;
+}
+
+/* RESET */
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:radial-gradient(circle at top,#1d2a52 0%,var(--bg) 55%);
+  color:var(--text);
+}
+
+/* HEADER NUEVO */
+.hero{
+  padding:120px 20px 100px;
+  text-align:center;
+  background: radial-gradient(circle at 50% 0%, #1e3a8a 0%, #0f172a 65%);
+  position:relative;
+  overflow:hidden;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  top:-150px;
+  left:50%;
+  transform:translateX(-50%);
+  width:800px;
+  height:800px;
+  background:radial-gradient(circle, rgba(59,130,246,0.25), transparent 70%);
+  filter:blur(100px);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+}
+
+.hero h1{
+  font-size:clamp(42px,7vw,72px);
+  font-weight:900;
+  margin:0;
+  color:#e2e8f0;
+}
+
+.subtitle{
+  margin-top:18px;
+  font-size:clamp(16px,2.5vw,20px);
+  color:#94a3b8;
+}
+
+/* CONTENIDO */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+
+section{
+  background:linear-gradient(180deg, rgba(30,41,59,.96), rgba(23,32,51,.96));
+  border:1px solid rgba(148,163,184,.14);
+  border-radius:18px;
+  padding:20px;
+  margin:15px 0;
+}
+
+h2{
+  color:var(--accent);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:12px;
+}
+
+.card{
+  background:rgba(15,23,42,.5);
+  border:1px solid rgba(148,163,184,.14);
+  border-radius:14px;
+  padding:12px;
+}
+
+.pill{
+  display:inline-block;
+  background:rgba(52,211,153,.12);
+  border:1px solid rgba(52,211,153,.25);
+  padding:4px 10px;
+  border-radius:999px;
+  font-size:12px;
+  margin-bottom:6px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Física y Astronomía</h1>
+    <p class="subtitle">
+      Recopilación de las respuestas de los trabajos dados en clase
+    </p>
+  </div>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>Trabajo N° 1</h2>
+
+    <h3>1. Método científico</h3>
+    <p><b>¿Qué es?</b> Proceso ordenado que se usa para investigar y obtener conocimientos confiables.</p>
+    <p><b>Características generales:</b> es ordenado, verificable, objetivo, repetible y permite sacar conclusiones basadas en evidencia.</p>
+
+    <div class="grid">
+      <div class="card"><span class="pill">Observación</span><p>Se observa un fenómeno o problema.</p><p class="small">Ejemplo: una planta se inclina hacia la ventana.</p></div>
+      <div class="card"><span class="pill">Planteamiento del problema</span><p>Se formula una pregunta sobre lo observado.</p><p class="small">Ejemplo: ¿por qué la planta crece hacia la luz?</p></div>
+      <div class="card"><span class="pill">Hipótesis</span><p>Se propone una posible explicación.</p><p class="small">Ejemplo: la luz influye en el crecimiento de la planta.</p></div>
+      <div class="card"><span class="pill">Experimentación</span><p>Se realizan pruebas para comprobar la hipótesis.</p><p class="small">Ejemplo: poner la planta en un lugar con luz de un solo lado.</p></div>
+      <div class="card"><span class="pill">Análisis de resultados</span><p>Se interpretan los datos obtenidos.</p><p class="small">Ejemplo: ver si la planta cambia de dirección con el tiempo.</p></div>
+      <div class="card"><span class="pill">Conclusión</span><p>Se acepta o rechaza la hipótesis.</p><p class="small">Ejemplo: la planta sí responde a la luz.</p></div>
+      <div class="card"><span class="pill">Comunicación</span><p>Se comparten los resultados.</p><p class="small">Ejemplo: explicar el experimento en clase o en un informe.</p></div>
+    </div>
+
+    <div class="example-box">
+      <div class="example-title">Ejemplo completo</div>
+      <div class="bubble-row">
+        <div class="bubble">Observación: la planta se inclina.</div>
+        <div class="bubble">Problema: ¿por qué sucede?</div>
+        <div class="bubble">Hipótesis: la luz la hace crecer hacia ese lado.</div>
+        <div class="bubble">Experimentación: se coloca con luz de un solo lado.</div>
+        <div class="bubble">Análisis: la planta gira hacia la luz.</div>
+        <div class="bubble">Conclusión: la luz afecta el crecimiento.</div>
+        <div class="bubble">Comunicación: se presentan los resultados.</div>
+      </div>
+    </div>
+
+    <div class="svg-wrap" aria-label="Diagrama del método científico">
+      <svg viewBox="0 0 1200 220" role="img">
+        <rect x="20" y="65" width="150" height="90" rx="45" fill="#38bdf8"/>
+        <rect x="190" y="65" width="150" height="90" rx="45" fill="#334155"/>
+        <rect x="360" y="65" width="150" height="90" rx="45" fill="#334155"/>
+        <rect x="530" y="65" width="150" height="90" rx="45" fill="#334155"/>
+        <rect x="700" y="65" width="150" height="90" rx="45" fill="#334155"/>
+        <rect x="870" y="65" width="150" height="90" rx="45" fill="#334155"/>
+        <rect x="1040" y="65" width="140" height="90" rx="45" fill="#334155"/>
+        <g fill="#e2e8f0" font-size="18" font-family="Arial" font-weight="700" text-anchor="middle">
+          <text x="95" y="103">Observación</text>
+          <text x="265" y="103">Problema</text>
+          <text x="435" y="103">Hipótesis</text>
+          <text x="605" y="103">Experimento</text>
+          <text x="775" y="103">Análisis</text>
+          <text x="945" y="103">Conclusión</text>
+          <text x="1110" y="103">Comunicación</text>
+        </g>
+      </svg>
+    </div>
+
+    <h3>2. Ciencia en Argentina</h3>
+    <p><b>¿Qué es?</b> El conjunto de instituciones, leyes, científicos y aportes que desarrollan conocimiento en el país.</p>
+
+    <div class="grid">
+      <div class="card"><span class="pill">CONICET</span><p>Investiga en biología, física, medicina y tecnología.</p></div>
+      <div class="card"><span class="pill">INTA</span><p>Trabaja con agricultura, ganadería y producción de alimentos.</p></div>
+      <div class="card"><span class="pill">INTI</span><p>Apoya a la industria y mejora procesos tecnológicos.</p></div>
+      <div class="card"><span class="pill">CNEA</span><p>Estudia y desarrolla energía nuclear.</p></div>
+      <div class="card"><span class="pill">CONAE</span><p>Se ocupa de la actividad espacial y los satélites.</p></div>
+    </div>
+
+    <p><b>Leyes que regulan:</b> la Ley de Ciencia, Tecnología e Innovación y la Ley de Financiamiento del Sistema Científico. Organizan la investigación y su apoyo económico.</p>
+    <p><b>Aportes y descubrimientos:</b> desarrollo en energía nuclear, avances en biotecnología, satélites de CONAE e investigaciones médicas importantes.</p>
+
+    <div class="line"></div>
+    <h3>Científicos argentinos y qué investigó cada uno</h3>
+    <div class="grid">
+      <div class="card"><span class="pill">Bernardo Houssay</span><p>Investigó el papel de las hormonas en el metabolismo del azúcar (diabetes).</p><p class="small"><b>Conclusión:</b> ayudó a entender cómo funcionan las hormonas en el cuerpo.</p></div>
+      <div class="card"><span class="pill">Luis Federico Leloir</span><p>Investigó cómo el cuerpo transforma los azúcares (carbohidratos).</p><p class="small"><b>Conclusión:</b> fue clave para comprender el metabolismo de los azúcares.</p></div>
+      <div class="card"><span class="pill">César Milstein</span><p>Investigó los anticuerpos y desarrolló los anticuerpos monoclonales.</p><p class="small"><b>Conclusión:</b> sus aportes fueron muy importantes para la medicina moderna.</p></div>
+      <div class="card"><span class="pill">René Favaloro</span><p>Desarrolló el bypass coronario para tratar enfermedades del corazón.</p><p class="small"><b>Conclusión:</b> su técnica salvó y mejoró muchas vidas.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Trabajo N° 2</h2>
+
+    <p><b>Ciencia:</b> conjunto de conocimientos obtenidos mediante la observación y el método científico para explicar la realidad.</p>
+    <p><b>Ciencias naturales:</b> rama de la ciencia que estudia la naturaleza, los seres vivos, la materia, la energía y sus cambios.</p>
+    <p><b>Física:</b> ciencia que estudia la materia, la energía y las leyes que rigen sus interacciones.</p>
+
+    <h3>a) Ramas de la física</h3>
+    <div class="grid">
+      <div class="card"><span class="pill">Termodinámica</span><p>Estudia el calor, la energía y sus transformaciones.</p></div>
+      <div class="card"><span class="pill">Electromagnetismo</span><p>Estudia la electricidad, el magnetismo y su relación.</p></div>
+      <div class="card"><span class="pill">Astronomía</span><p>Estudia los cuerpos celestes y el universo.</p></div>
+      <div class="card"><span class="pill">Óptica</span><p>Estudia la luz y sus propiedades.</p></div>
+      <div class="card"><span class="pill">Física cuántica</span><p>Estudia el comportamiento de partículas muy pequeñas (átomos y subatómicas).</p></div>
+      <div class="card"><span class="pill">Física nuclear</span><p>Estudia el núcleo de los átomos y sus reacciones.</p></div>
+      <div class="card"><span class="pill">Mecánica</span><p>Estudia el movimiento y las fuerzas que actúan sobre los cuerpos.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Trabajo N° 3</h2>
+
+    <h3>Física nuclear</h3>
+    <p><b>Rama de la física que estudia el núcleo del átomo, sus componentes (protones y neutrones) y sus transformaciones.</b></p>
+
+    <h3>Radiactividad</h3>
+    <p>Propiedad de algunos núcleos inestables de emitir radiación para volverse más estables.</p>
+
+    <h3>Radiactividad natural</h3>
+    <p>Es la que ocurre de forma espontánea en la naturaleza, sin intervención humana.</p>
+
+    <h3>Ley de desintegración radiactiva</h3>
+    <p>Establece que los núcleos radiactivos se desintegran con el tiempo a un ritmo constante, caracterizado por la <b>vida media</b>.</p>
+
+    <h3>Evolución del átomo (modelo)</h3>
+    <div class="grid">
+      <div class="card"><span class="pill">Dalton</span><p>Átomo indivisible (esfera).</p><p class="small">Conclusión: el átomo se entendía como una bola sólida sin partes internas.</p></div>
+      <div class="card"><span class="pill">Thomson</span><p>“Budín con pasas” (electrones incrustados).</p><p class="small">Conclusión: el átomo tenía electrones dentro de una masa positiva.</p></div>
+      <div class="card"><span class="pill">Rutherford</span><p>Núcleo central y espacio vacío.</p><p class="small">Conclusión: casi todo el átomo es espacio vacío y el núcleo concentra la masa.</p></div>
+      <div class="card"><span class="pill">Bohr</span><p>Electrones en órbitas.</p><p class="small">Conclusión: los electrones giran en niveles de energía definidos.</p></div>
+      <div class="card"><span class="pill">Modelo actual</span><p>Nube electrónica.</p><p class="small">Conclusión: no se conoce la órbita exacta, sino zonas de probabilidad.</p></div>
+    </div>
+
+    <div class="svg-wrap" aria-label="Evolución de modelos atómicos">
+      <svg viewBox="0 0 1200 280" role="img">
+        <g font-family="Arial" text-anchor="middle">
+          <rect x="20" y="30" width="210" height="200" rx="18" fill="#0f172a" stroke="#475569"/>
+          <circle cx="125" cy="120" r="48" fill="#94a3b8"/>
+          <text x="125" y="190" fill="#e2e8f0" font-size="22" font-weight="700">Dalton</text>
+          <text x="125" y="215" fill="#cbd5e1" font-size="14">Esfera sólida</text>
+
+          <rect x="245" y="30" width="210" height="200" rx="18" fill="#0f172a" stroke="#475569"/>
+          <circle cx="350" cy="120" r="56" fill="#1e293b" stroke="#cbd5e1" stroke-width="2"/>
+          <circle cx="320" cy="110" r="12" fill="#f59e0b"/>
+          <circle cx="360" cy="100" r="12" fill="#f59e0b"/>
+          <circle cx="385" cy="135" r="12" fill="#f59e0b"/>
+          <circle cx="335" cy="150" r="12" fill="#f59e0b"/>
+          <text x="350" y="190" fill="#e2e8f0" font-size="22" font-weight="700">Thomson</text>
+          <text x="350" y="215" fill="#cbd5e1" font-size="14">Budín con pasas</text>
+
+          <rect x="470" y="30" width="210" height="200" rx="18" fill="#0f172a" stroke="#475569"/>
+          <circle cx="575" cy="120" r="19" fill="#f97316"/>
+          <circle cx="575" cy="120" r="60" fill="none" stroke="#93c5fd" stroke-width="3" stroke-dasharray="8 6"/>
+          <text x="575" y="190" fill="#e2e8f0" font-size="22" font-weight="700">Rutherford</text>
+          <text x="575" y="215" fill="#cbd5e1" font-size="14">Núcleo y vacío</text>
+
+          <rect x="695" y="30" width="210" height="200" rx="18" fill="#0f172a" stroke="#475569"/>
+          <circle cx="800" cy="120" r="16" fill="#f59e0b"/>
+          <circle cx="800" cy="120" r="60" fill="none" stroke="#93c5fd" stroke-width="3"/>
+          <circle cx="800" cy="120" r="90" fill="none" stroke="#93c5fd" stroke-width="3"/>
+          <text x="800" y="190" fill="#e2e8f0" font-size="22" font-weight="700">Bohr</text>
+          <text x="800" y="215" fill="#cbd5e1" font-size="14">Órbitas definidas</text>
+
+          <rect x="920" y="30" width="260" height="200" rx="18" fill="#0f172a" stroke="#475569"/>
+          <ellipse cx="1050" cy="120" rx="84" ry="54" fill="rgba(96,165,250,.15)" stroke="#93c5fd" stroke-width="3"/>
+          <ellipse cx="1030" cy="100" rx="55" ry="35" fill="rgba(96,165,250,.12)" stroke="#93c5fd" stroke-width="2"/>
+          <ellipse cx="1078" cy="136" rx="58" ry="37" fill="rgba(96,165,250,.12)" stroke="#93c5fd" stroke-width="2"/>
+          <text x="1050" y="190" fill="#e2e8f0" font-size="22" font-weight="700">Modelo actual</text>
+          <text x="1050" y="215" fill="#cbd5e1" font-size="14">Nube electrónica</text>
+        </g>
+      </svg>
+    </div>
+
+    <h3>Características del núcleo atómico</h3>
+    <div class="grid">
+      <div class="card"><span class="pill">Ubicación</span><p>Está en el centro del átomo.</p></div>
+      <div class="card"><span class="pill">Componentes</span><p>Tiene protones (+) y neutrones (sin carga).</p></div>
+      <div class="card"><span class="pill">Masa</span><p>Es muy pequeño pero concentra casi toda la masa.</p></div>
+      <div class="card"><span class="pill">Energía</span><p>Tiene gran energía.</p></div>
+    </div>
+
+    <h3>Energía de enlace</h3>
+    <p>Energía que mantiene unidos a protones y neutrones en el núcleo.</p>
+
+    <h3>Fisión</h3>
+    <p>División de un núcleo pesado en núcleos más pequeños, liberando energía.</p>
+    <p class="small">Dibujo: [ Núcleo grande ] → [ pequeño ] + [ pequeño ] + energía</p>
+
+    <h3>Fusión</h3>
+    <p>Unión de núcleos pequeños para formar uno más grande, liberando mucha energía.</p>
+    <p class="small">Dibujo: [ pequeño ] + [ pequeño ] → [ núcleo grande ] + energía</p>
+
+    <div class="svg-wrap" aria-label="Diagrama de fisión y fusión nuclear">
+      <svg viewBox="0 0 1200 320" role="img">
+        <defs>
+          <linearGradient id="n1" x1="0" x2="1">
+            <stop offset="0%" stop-color="#fb7185"/>
+            <stop offset="100%" stop-color="#f97316"/>
+          </linearGradient>
+          <linearGradient id="n2" x1="0" x2="1">
+            <stop offset="0%" stop-color="#38bdf8"/>
+            <stop offset="100%" stop-color="#22c55e"/>
+          </linearGradient>
+        </defs>
+        <text x="220" y="38" fill="#e2e8f0" font-size="26" font-family="Arial" font-weight="700">Fisión</text>
+        <circle cx="210" cy="150" r="72" fill="url(#n1)"/>
+        <text x="210" y="157" text-anchor="middle" fill="#fff" font-size="26" font-family="Arial" font-weight="700">Núcleo</text>
+        <path d="M290 150 C360 150, 380 110, 440 100" stroke="#cbd5e1" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <path d="M290 150 C360 150, 380 190, 440 200" stroke="#cbd5e1" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <circle cx="500" cy="95" r="42" fill="#f59e0b"/>
+        <circle cx="500" cy="205" r="42" fill="#f59e0b"/>
+        <text x="500" y="101" text-anchor="middle" fill="#111827" font-size="18" font-family="Arial" font-weight="700">Pequeño</text>
+        <text x="500" y="211" text-anchor="middle" fill="#111827" font-size="18" font-family="Arial" font-weight="700">Pequeño</text>
+        <text x="585" y="155" fill="#bbf7d0" font-size="22" font-family="Arial" font-weight="700">+ energía</text>
+
+        <text x="810" y="38" fill="#e2e8f0" font-size="26" font-family="Arial" font-weight="700">Fusión</text>
+        <circle cx="760" cy="110" r="44" fill="#38bdf8"/>
+        <circle cx="760" cy="210" r="44" fill="#38bdf8"/>
+        <text x="760" y="116" text-anchor="middle" fill="#0f172a" font-size="18" font-family="Arial" font-weight="700">Pequeño</text>
+        <text x="760" y="216" text-anchor="middle" fill="#0f172a" font-size="18" font-family="Arial" font-weight="700">Pequeño</text>
+        <path d="M805 110 C875 110, 890 140, 960 155" stroke="#cbd5e1" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <path d="M805 210 C875 210, 890 180, 960 165" stroke="#cbd5e1" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <circle cx="1035" cy="155" r="72" fill="url(#n2)"/>
+        <text x="1035" y="162" text-anchor="middle" fill="#fff" font-size="26" font-family="Arial" font-weight="700">Núcleo</text>
+        <text x="1045" y="245" fill="#bbf7d0" font-size="22" font-family="Arial" font-weight="700">+ energía</text>
+      </svg>
+    </div>
+
+    <h3>Fuerzas fundamentales de la naturaleza</h3>
+    <div class="grid">
+      <div class="card"><span class="pill">Gravitatoria</span><p>Atracción entre masas.</p></div>
+      <div class="card"><span class="pill">Electromagnética</span><p>Interacción entre cargas eléctricas.</p></div>
+      <div class="card"><span class="pill">Nuclear fuerte</span><p>Mantiene unidos protones y neutrones en el núcleo.</p></div>
+      <div class="card"><span class="pill">Nuclear débil</span><p>Interviene en la desintegración radiactiva.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Trabajo N° 4</h2>
+
+    <h3>Física cuántica</h3>
+    <p><b>Rama de la física que estudia el comportamiento de la materia y la energía a escala muy pequeña (átomos y partículas subatómicas).</b></p>
+    <div class="grid">
+      <div class="card"><span class="pill">Radiación de cuerpo negro</span><p>Energía que emite un objeto ideal al calentarse, dependiendo solo de su temperatura.</p></div>
+      <div class="card"><span class="pill">Efecto fotoeléctrico</span><p>Fenómeno en el que la luz al incidir sobre un material arranca electrones.</p></div>
+      <div class="card"><span class="pill">Espectros atómicos</span><p>Conjunto de líneas de luz que emiten o absorben los átomos, propias de cada elemento.</p></div>
+      <div class="card"><span class="pill">Modelo atómico de Bohr</span><p>Propone que los electrones giran en órbitas fijas con niveles de energía definidos y saltan entre ellas emitiendo o absorbiendo energía.</p></div>
+      <div class="card"><span class="pill">Dualidad onda-partícula</span><p>La materia y la luz se comportan como onda y como partícula.</p></div>
+      <div class="card"><span class="pill">Principio de incertidumbre</span><p>No se puede conocer con exactitud al mismo tiempo la posición y la velocidad de una partícula.</p></div>
+      <div class="card"><span class="pill">Mecánica probabilística</span><p>Describe el comportamiento de partículas mediante probabilidades, no con certezas exactas.</p></div>
+      <div class="card"><span class="pill">Efecto túnel</span><p>Fenómeno en el que una partícula puede atravesar una barrera de energía que en física clásica no podría pasar.</p></div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
